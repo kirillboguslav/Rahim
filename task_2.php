@@ -1,28 +1,27 @@
 <?php
 //Как пример взят с https://www.php.net/manual/ru/control-structures.foreach.php
 
-$a =[
+$a = [
     [
-    "tags" => "reports file",
-    "title" => "Reports"
+        "title" => 'Privacy',
+        "tags" => 'Your privacy is important to us at SmartAdmin and the protection, confidentiality and integrity of your personal data are our prime concerns.
+                            We will only use your personal information to administer your account, provide the products and services you have requested from us, and to keep you informed about our products and services (if you have consented to this).
+                            We only use your data for the purposes for which it was collected and, where relevant, to meet local legal obligations.
+                            We will retain your personal information only for as long as is necessary for the purposes for which the information was collected, or as long as is required pursuant to law.'
     ],
     [
-    "tags" => "analytics graphs",
-    "title" => "Analytics"
-    ],
-    [
-    "tags" => "export download",
-    "title" => "Export"
-    ],
-    [
-    "tags" => "storage",
-    "title" => "Storage"
+        "title" => 'Cookies and other similar technologies',
+        "tags" => 'We collect certain data through cookies and similar technologies (e.g. web beacons, tags, device identifiers). Cookies are text files placed on your computer to collect standard internet log information and visitor behaviour information. This information is used to track visitor use of the website and to compile statistical reports on website activity. We register your interaction with our services in order to improve our website, content and services. Our use of such technologies and the data collected is described in more detail in our Cookie Policy. You can manage your cookie preferences through your browser settings.'
     ]
-];
+     ];
 
-
+//foreach ($a as $k => $a) {
+//echo $a[title];
+//echo $a[tags];
+//}
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +43,6 @@ $a =[
 </head>
 <body class="mod-bg-1 mod-nav-link ">
 <main id="js-page-content" role="main" class="page-content">
-
     <div class="col-md-6">
         <div id="panel-1" class="panel">
             <div class="panel-hdr">
@@ -58,29 +56,13 @@ $a =[
             </div>
             <div class="panel-container show">
                 <div class="panel-content">
-                    <div class="panel-content">
-                        <div class="bg-warning-100 border border-warning rounded">
-                            <div class="input-group p-2 mb-0">
-                                <input type="text" class="form-control form-control-lg shadow-inset-2 bg-warning-50 border-warning" id="js-list-msg-filter" placeholder="Filter list">
-                                <div class="input-group-append">
-                                    <div class="input-group-text bg-warning-500 border-warning">
-                                        <i class="fal fa-search fs-xl"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul id="js-list-msg" class="list-group px-2 pb-2 js-list-filter">
+                    <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g">
 
-                                    <?php
-                                    foreach($a as $k) {
-                                        echo '<li class="list-group-item">';
-                                        echo '<span data-filter-tags="'.$k['tags'].'">'.$k['title'].'</span>';
-                                        echo '</li>';
-                                    }
-                                    ?>
+                        <?php foreach ($a as $k => $a) {
+                        echo '<h2>'.$a[title].'</h2>
+                        <p class="mb-g">'.$a[tags].'</p>';
+                        } ?>
 
-                            </ul>
-                            <div class="filter-message js-filter-message mt-0 fs-sm"></div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -99,4 +81,3 @@ $a =[
 </script>
 </body>
 </html>
-
