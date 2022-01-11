@@ -1,3 +1,47 @@
+<?php
+                        $a = [
+                            [
+                                "img" => 'img/demo/authors/sunny.png',
+                                "alt" => 'Sunny A.',
+                                "title" => 'Sunny A. (UI/UX Expert)',
+                                "job" => 'Lead Author',
+                                "link" => 'https://twitter.com/@myplaneticket',
+                                "mail" => '@myplaneticket',
+                                "link2" => 'https://wrapbootstrap.com/user/myorange',
+                                "title2" => 'Contact Sunny'
+                            ],
+                            [
+                                "img" => 'img/demo/authors/josh.png',
+                                "alt" => 'Jos K.',
+                                "title" => 'Jos K. (ASP.NET Developer)',
+                                "job" => 'Partner &amp; Contributor',
+                                "link" => 'https://twitter.com/@atlantez',
+                                "mail" => '@atlantez',
+                                "link2" => 'https://wrapbootstrap.com/user/Walapa',
+                                "title2" => 'Contact Jos'
+                            ],
+                            [
+                                "img" => 'img/demo/authors/jovanni.png',
+                                "alt" => 'Jovanni Lo',
+                                "title" => 'Jovanni L. (PHP Developer)',
+                                "job" => 'Partner &amp; Contributor',
+                                "link" => 'https://twitter.com/@lodev09',
+                                "mail" => '@lodev09',
+                                "link2" => 'https://wrapbootstrap.com/user/lodev09',
+                                "title2" => 'Contact Jovanni'
+                            ],
+                            [
+                                "img" => 'img/demo/authors/roberto.png',
+                                "alt" => 'Jovanni Lo',
+                                "title" => 'Roberto R. (Rails Developer)',
+                                "job" => 'Partner &amp; Contributor',
+                                "link" => 'https://twitter.com/@sildur',
+                                "mail" => '@sildur',
+                                "link2" => 'https://wrapbootstrap.com/user/sildur',
+                                "title2" => 'Contact Roberto'
+                            ]
+                        ];
+                        ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,31 +79,6 @@
                     <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
 
                         <?php
-                        $a = [
-                            [
-                                "img" => 'img/demo/authors/sunny.png',
-                                "alt" => 'Sunny A.',
-                                "title" => 'Sunny A. (UI/UX Expert)',
-                                "job" => 'Lead Author',
-                                "link" => 'https://twitter.com/@myplaneticket',
-                                "mail" => '@myplaneticket',
-                                "link2" => 'https://wrapbootstrap.com/user/myorange',
-                                "title2" => 'Contact Sunny'
-                            ],
-                            [
-                                "img" => 'img/demo/authors/josh.png',
-                                "alt" => 'Jos K.',
-                                "title" => 'Jos K. (ASP.NET Developer)',
-                                "job" => 'Partner &amp; Contributor',
-                                "link" => 'https://twitter.com/@atlantez',
-                                "mail" => '@atlantez',
-                                "link2" => 'https://wrapbootstrap.com/user/Walapa',
-                                "title2" => 'Contact Jos'
-                            ]
-                        ];
-                        ?>
-
-                        <?php
                         foreach ($a as $k => $a) {
                             echo '<div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">';
                             echo '<img src="'.$a[img].'" alt="'.$a[alt].'" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">';
@@ -74,33 +93,6 @@
                             echo '</div></div>';
                         }
                         ?>
-
-                        <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="img/demo/authors/jovanni.png" alt="Jovanni Lo" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    Jovanni L. (PHP Developer)
-                                    <small class="m-0 fw-300">
-                                        Partner &amp; Contributor
-                                    </small>
-                                </h5>
-                                <a href="https://twitter.com/@lodev09" class="text-info fs-sm" target="_blank">@lodev09</a> -
-                                <a href="https://wrapbootstrap.com/user/lodev09" class="text-info fs-sm" target="_blank" title="Contact Jovanni"><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="img/demo/authors/roberto.png" alt="Jovanni Lo" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    Roberto R. (Rails Developer)
-                                    <small class="m-0 fw-300">
-                                        Partner &amp; Contributor
-                                    </small>
-                                </h5>
-                                <a href="https://twitter.com/@sildur" class="text-info fs-sm" target="_blank">@sildur</a> -
-                                <a href="https://wrapbootstrap.com/user/sildur" class="text-info fs-sm" target="_blank" title="Contact Roberto"><i class="fal fa-envelope"></i></a>
-                            </div>
 
                         </div>
                     </div>
